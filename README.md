@@ -7,7 +7,8 @@ This website contains the catalogue of Sam Shuster's past employment, profession
 - Certificate in GIS
 
 ## Employment
-- Community Mapping Lab - CURO Research Fellow ($1000 Stipend)
+- Exploratory Analysis of NASA DAYMET Precipitation Data - NSF Funded Undergraduate research
+- Community Mapping Lab - CURO Research Fellow ($1000 Stipend).
 - Enviromental Change Laboratory - Paid Undergraduate Research Assistantship 
 
 ## Technical Proficiencies
