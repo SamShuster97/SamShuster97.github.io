@@ -5,6 +5,7 @@ This website contains the catalogue of Sam Shuster's past employment, profession
 ## Education
 - BS in Geography emphasis in GIS University of Georgia
 - Certificate in GIS
+
 ## Employment
 - Community Mapping Lab - CURO Research Fellow ($1000 Stipend)
 - Enviromental Change Laboratory - Paid Undergraduate Research Assistantship 
