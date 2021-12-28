@@ -1,2 +1,15 @@
 # SamShuster97.github.io
-My Personal Website
+The Personal Professional website of Sam Shuster. 
+This website contains the catalogue of Sam Shuster's past employment, professional projects, skills and interests.
+
+## Education
+- BS in Geography emphasis in GIS University of Georgia
+- Certificate in GIS
+## Employment
+- Community Mapping Lab - CURO Research Fellow ($1000 Stipend)
+- Enviromental Change Laboratory - Paid Undergraduate Research Assistantship 
+
+## Technical Proficiencies
+- Python
+- ArcGIS Pro
+- 
