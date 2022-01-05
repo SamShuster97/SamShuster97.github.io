@@ -2632,7 +2632,8 @@ input, select, textarea {
 
 	}
 
-/* relevant styles */
+/* relevant styles */ 
+/* the following is the code that creates the description text when portfolio items are hovered over */
 .img__wrap {
   position: relative;
   display: inline-block;
@@ -2648,7 +2649,7 @@ input, select, textarea {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(36, 62, 206, 0.6);
+  background: rgba(202, 119, 25, 0.514);
   color: #fff;
   visibility: hidden;
   opacity: 0;
