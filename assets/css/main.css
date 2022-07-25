@@ -2695,9 +2695,10 @@ input, select, textarea {
 .Back, .forward {
   cursor: pointer;
   position: absolute;
-  top: 48%;
+  top: 50%;
   width: auto;
-  margin-top: -23px;
+  margin-top: -0px;
+  margin-left: -500px;
   padding: 17px;
   color: grey;
   font-weight: bold;
