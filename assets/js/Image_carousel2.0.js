@@ -1,14 +1,14 @@
-const items = document.querySelectorAll('.item');
+const carousel = document.querySelectorAll('.carousel');
 
-const reset = () => items.forEach((item) => item.classList.remove('animation'));
+const reset = () => carousel.forEach((item) => item.classList.remove('animation'));
 
 function accordion(e) {
-  if (!e.target.closest('.item')) return;
+  if (!e.target.closest('.carousel')) return;
   reset();
   e.target.parentElement.classList.add('animation');
 }
 
-const init = () => items[items.length-1].classList.add('animation');
+const init = () => carousel[carousel.length-1].classList.add('animation');
 
 window.addEventListener('load',init,false);
 window.addEventListener('click',accordion,false);
