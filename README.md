@@ -1,6 +1,6 @@
 # SamShuster97.github.io
 The Personal Professional website of Sam Shuster. 
-This website contains the catalogue of Sam Shuster's past employment, professional projects, skills and interests.
+This website contains the catalogue of Sam Shuster's employment history, professional projects, skills and interests.
 
 <!-- ## Education
 - BS in Geography emphasis in GIS University of Georgia
