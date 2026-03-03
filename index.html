@@ -9,6 +9,8 @@
 		<title>Welcome to Sam Shuster's Personal Website!</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--flickity style sheet  -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.5/flickity.min.css">
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="is-preload">
@@ -62,9 +64,9 @@
 						<div class="container">
 
 							<header>
-								<h2 class="alt">Hi, I'm <strong>Sam Shuster</strong>!</a> I'm a Geospatial Data Analyst at Norfolk Southern
+								<h2 class="alt">Hi, I'm <strong>Sam Shuster</strong>! I'm a Geospatial Data Analyst at Norfolk Southern
 								passionate about Data Science,<br />
-								with special interest in Remote Sensing and GIS</a></h2>
+								with special interest in Remote Sensing and GIS</h2>
 								<!-- <p>Line 1<br />
 								Line 2</p> -->
 							</header>
@@ -215,11 +217,10 @@
 				<!-- About Me -->
 					<section id="about" class="three">
 						<div class="container">
-
 							<header>
 								<h2>About Me</h2>
 							</header>
-
+								
 							<a href="#" class="image featured"><img src="images/grandcanyon2020.jpg" width = "50%" height= "50%" /></a>
 							
 
@@ -248,10 +249,28 @@
 								<h2>Background</h2>
 							</header>
 
-							<iframe src="images/ResumeJune22.pdf" height="600" width="70%"></iframe>
-<!--add #toolbar=0 to the end of the src URL to make non-downloadable. Ex. src="images/ResumeJan22.pdf#toolbar=0"-->
+							<p>View my resume below. Use the buttons to open in a new tab or download the PDF.</p>
+
+							<div class="pdf-viewer" style="display:flex;flex-direction:column;align-items:flex-start;gap:12px;">
+								<iframe
+									src="images/Resume%20Data%20Science%20and%20consulting%20feb%202026.pdf"
+									width="70%"
+									height="600"
+									style="border:1px solid #ccc;"
+									title="Resume PDF"
+									aria-label="Resume PDF preview">
+								</iframe>
+
+								<div class="pdf-actions" style="margin-left:0;">
+									<a class="button" href="images/Resume%20Data%20Science%20and%20consulting%20feb%202026.pdf" target="_blank" rel="noopener">Open in new tab</a>
+									<a class="button" href="images/Resume%20Data%20Science%20and%20consulting%20feb%202026.pdf" download>Download PDF</a>
+								</div>
+							</div>
+
+						</div>
+<!--add #toolbar=0 to the end of the src URL to make non-downloadable. Ex. src="images/ResumeJan22.pdf#toolbar=0"
 							<p align="left">
-								<a href="images/Resume Nov '21.pdf"></a>
+								<a href="images/Resume Data Science and consulting feb 2026.pdf"></a>
 							</p>
 						
 						</div>
@@ -285,7 +304,35 @@
 						</div>
 					</section>
 
+					<!-- <section id="image-carousel" class="six">
+						<div class="hero-slider" carousel>
+							<div class="carousel-cell" style="background-image: url(images/grandcanyon2020.jpg);">
+								<div class="gradient"></div>
+								<div class="info-container">
+									<h3 class="header">First Slide</h3>
+									<h2 class="text">Parallex Slider</h2>
+								</div>
+					
+							</div>
+					
+							<div class="carousel-cell" style="background-image: url(images/Bulldog-Drawing1.jpg);">
+								<div class="gradient"></div>
+								<div class="info-container">
+									<h3 class="header">Second Slide</h3>
+									<h2 class="text">Parallex Slider</h2>
+								</div>
+							</div>
+					
+							</div>
+					
+						</div>
+					</section> -->
+
 			</div>
+
+			
+			
+			
 
 		<!-- Footer -->
 			<div id="footer">
@@ -305,6 +352,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.5/flickity.pkgd.min.js"></script>
 
 	</body>
 </html>
