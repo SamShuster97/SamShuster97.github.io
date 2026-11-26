@@ -18,3 +18,8 @@
 #contact-status[data-error]{color:#ffb9a7}
 @media(max-width:680px){.contact{grid-template-columns:1fr}}
 @media(max-width:420px){.contact-fields{grid-template-columns:1fr}}
+
+/* Extend the existing project button's hit area to the whole card. */
+.project{position:relative}
+.project button::after{content:"";position:absolute;inset:0}
+.project:focus-within{border-color:#879d75}
