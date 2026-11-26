@@ -7,6 +7,7 @@ Static portfolio website for geospatial analysis, remote sensing, and data scien
 - `projects.js` renders and filters the project cards.
 - `contact.js` handles the contact form.
 - `img/` contains project and hero images.
+- `project-files/` contains reports linked from the project cards.
 - `sam-shuster-resume.pdf` is the downloadable résumé.
 
 The site has no build step; GitHub Pages serves the files directly.

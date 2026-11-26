@@ -1,4 +1,3 @@
-const original = 'https://samshuster97.github.io/';
 const projects = [
   {
     id: 'denver', category: 'Remote sensing', title: 'Mapping Denver’s growth',
@@ -6,7 +5,7 @@ const projects = [
     detail: 'This study brings census data and remotely sensed land-cover information together to examine how Denver changed over time. It uses machine learning as part of the land-use and land-cover analysis.',
     tags: ['Land use and land cover', 'Census data', 'Machine learning'],
     alt: 'Land-cover maps from the Denver growth study',
-    url: original + 'images/Final%20Report_GEOG4450.pdf', label: 'Read the report (PDF)'
+    url: 'project-files/denver-growth-report.pdf', label: 'Read the report (PDF)'
   },
   {
     id: 'bike', category: 'GIS', title: 'Better bike routes in Athens',
@@ -19,10 +18,10 @@ const projects = [
   {
     id: 'daymet', category: 'Remote sensing', title: 'Patterns in precipitation',
     summary: 'Exploratory time-series analysis of NASA DAYMET precipitation data.',
-    detail: 'This undergraduate research project examined precipitation over time using the NASA DAYMET gridded weather dataset. The original presentation documents the analysis.',
+    detail: 'This undergraduate research project examined precipitation over time using the NASA DAYMET gridded weather dataset. The report documents the analysis.',
     tags: ['DAYMET', 'Climate data', 'Time-series analysis'],
     alt: 'A figure from the DAYMET precipitation analysis',
-    url: original + 'DAYMET.html', label: 'Open the original presentation'
+    url: 'project-files/daymet-precipitation-analysis.pdf', label: 'Read the analysis (PDF)'
   },
   {
     id: 'hotel', category: 'Data analytics', title: 'Hotel revenue dashboard',
@@ -30,15 +29,16 @@ const projects = [
     detail: 'The dashboard brings revenue trends and performance metrics together in one view. The screenshot below provides a preview. The original Power BI embed may require sign-in.',
     tags: ['Power BI', 'Business intelligence', 'Revenue analysis'],
     alt: 'Hotel revenue dashboard with charts and summary metrics',
-    url: original + 'HotelRevenue_Dashboard.html', label: 'Open the original dashboard'
+    url: 'https://app.powerbi.com/reportEmbed?reportId=83d0580d-0be0-4f24-8a5f-672e5b326797&autoAuth=true&ctid=7c9746f6-ae85-4c56-81bb-67b2905f8ff8',
+    label: 'Open the Power BI dashboard'
   },
   {
     id: 'atlanta', category: 'GIS', title: 'Violent crime patterns in Atlanta',
     summary: 'A geostatistical analysis of where violent crime was concentrated in Atlanta, Georgia.',
-    detail: 'This project uses geostatistical methods to investigate the spatial distribution of violent crime. The original project page includes the analysis, presentation, and documentation of findings.',
+    detail: 'This project uses geostatistical methods to investigate the spatial distribution of violent crime. The report documents the analysis and findings.',
     tags: ['Geostatistics', 'Spatial analysis', 'Atlanta'],
     alt: 'Maps from the Atlanta violent crime analysis',
-    url: original + 'AtlCrime.html', label: 'Open the analysis and reports'
+    url: 'project-files/atlanta-crime-findings.pdf', label: 'Read the findings (PDF)'
   },
   {
     id: 'kaza', category: 'GIS', title: 'Human–elephant conflict in Zimbabwe',
@@ -46,7 +46,8 @@ const projects = [
     detail: 'This project examines human–elephant conflict in the Zimbabwe portion of the Kavango Zambezi Transfrontier Conservation Area. The map shows conservation designations across the region.',
     tags: ['Conservation', 'Cartography', 'Kavango Zambezi'],
     alt: 'Map of conservation designations in the Kavango Zambezi region',
-    url: original + 'kaza.html', label: 'Open the original presentation'
+    url: 'https://onedrive.live.com/embed?cid=D3A676FA1A28D9DB&resid=D3A676FA1A28D9DB%2115475&authkey=ALWaM5gFb8-w_pU&em=2&wdAr=1.7777777777777777',
+    label: 'View the original presentation'
   },
   {
     id: 'canyon', category: 'Personal', title: 'Grand Canyon, 2020',
@@ -70,6 +71,24 @@ const grid = document.querySelector('#projects');
 const filterGroup = document.querySelector('.filters');
 const resultCount = document.querySelector('#result-count');
 const dialog = document.querySelector('#case-study');
+
+function isBackdropEvent(event) {
+  if (event.target !== dialog) return false;
+  const bounds = dialog.getBoundingClientRect();
+  return event.clientX < bounds.left || event.clientX >= bounds.right ||
+    event.clientY < bounds.top || event.clientY >= bounds.bottom;
+}
+
+let pointerStartedOnBackdrop = false;
+dialog.addEventListener('pointerdown', event => {
+  pointerStartedOnBackdrop = isBackdropEvent(event);
+});
+dialog.addEventListener('click', event => {
+  const shouldClose = pointerStartedOnBackdrop && isBackdropEvent(event);
+  pointerStartedOnBackdrop = false;
+  if (shouldClose) dialog.close();
+});
+
 
 function element(tag, content, className) {
   const node = document.createElement(tag);
