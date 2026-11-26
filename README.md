@@ -1,13 +1,12 @@
-# SamShuster97.github.io
-The Personal Professional website of Sam Shuster. 
-This website contains the catalogue of Sam Shuster's past employment, professional projects, skills and interests.
+# Sam Shuster Portfolio
 
-<!-- ## Education
-- BS in Geography emphasis in GIS University of Georgia
-- Certificate in GIS
+Static portfolio website for geospatial analysis, remote sensing, and data science projects. The site is hosted with GitHub Pages.
 
-## Employment
-- Exploratory Analysis of NASA DAYMET Precipitation Data - NSF Funded Undergraduate research
-- Community Mapping Lab - CURO Paid Research Fellowship
-- Enviromental Change Laboratory - Paid Undergraduate Research Assistantship 
- -->
+- `index.html` contains the page structure and portfolio content.
+- `style.css` provides responsive styling.
+- `projects.js` renders and filters the project cards.
+- `contact.js` handles the contact form.
+- `img/` contains project and hero images.
+- `sam-shuster-resume.pdf` is the downloadable résumé.
+
+The site has no build step; GitHub Pages serves the files directly.
